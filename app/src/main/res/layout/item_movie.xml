@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="6dp"
+    android:paddingTop="12dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_item_photo"
+        android:layout_width="170dp"
+        android:layout_height="230dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/poster_sample"
+        android:layout_gravity="center_horizontal"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent" />
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="6dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:text="@string/lbl_name" />
+
+</LinearLayout>
